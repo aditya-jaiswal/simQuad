@@ -21,7 +21,7 @@ def calcPose(omega):
 	rpy[0] = rotate(rpy[0], rpy[2], theta[2])
 
 plt.ion()
-arduino = serial.Serial('/dev/ttyACM1', 57600)
+arduino = serial.Serial('/dev/ttyACM0', 57600)
 #dt = 5.235987755982989e-05 #.003 ms * (pi/180)
 dt = .00006
 rpy = np.eye(3)
